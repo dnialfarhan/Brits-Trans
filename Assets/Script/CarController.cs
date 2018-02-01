@@ -1,0 +1,91 @@
+/*
+* Copyright (c) Danial Farhan
+* http://twitter.com/dfkh_/
+*/
+
+using System.Collections.Generic;
+using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
+
+[System.Serializable]
+public class CarController_Manager : System.Object {
+
+	public WheelCollider leftWheel;
+	public GameObject leftWheelMesh;
+	public WheelCollider rightWheel;
+	public GameObject rightWheelMesh;
+	public bool motor;
+	public bool steering;
+	public bool reverseTurn;
+}
+
+public class CarController : MonoBehaviour
+{
+
+	Rigidbody rb;
+	public float maxMotorTorque;
+	public float maxSteeringAngle;
+	public List<CarController_Manager> truck_Infos;
+
+
+	private void Start()
+	{
+		rb = this.GetComponent<Rigidbody>();
+	}
+
+	public void VisualizeWheel(CarController_Manager wheelPair)
+	{
+		Quaternion rot;
+		Vector3 pos;
+		wheelPair.leftWheel.GetWorldPose(out pos, out rot);
+		wheelPair.leftWheelMesh.transform.position = pos;
+		wheelPair.leftWheelMesh.transform.rotation = rot;
+		wheelPair.rightWheel.GetWorldPose(out pos, out rot);
+		wheelPair.rightWheelMesh.transform.position = pos;
+		wheelPair.rightWheelMesh.transform.rotation = rot;
+	}
+
+	public void Update()
+	{
+
+		float motor = maxMotorTorque * Input.GetAxis("Vertical");
+		float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+		float brakeTorque = Mathf.Abs(Input.GetAxis("Jump"));
+
+		if (brakeTorque > 0.001)
+		{
+			brakeTorque = maxMotorTorque;
+			motor = 0;
+			rb.drag = 2.5f;
+		}
+		else
+		{
+			brakeTorque = 0;
+			rb.drag = 0.1f;
+		}
+
+		SpeedoMeter.ShowSpeedo(rb.velocity.magnitude, 0, 100);
+
+		foreach (CarController_Manager truck_Info in truck_Infos)
+		{
+			if (truck_Info.steering == true)
+			{
+				truck_Info.leftWheel.steerAngle = truck_Info.rightWheel.steerAngle = ((truck_Info.reverseTurn) ? -1 : 1) * steering;
+			}
+
+			if (truck_Info.motor == true)
+			{
+				truck_Info.leftWheel.motorTorque = motor;
+				truck_Info.rightWheel.motorTorque = motor;
+			}
+
+			truck_Info.leftWheel.brakeTorque = brakeTorque;
+			truck_Info.rightWheel.brakeTorque = brakeTorque;
+
+			VisualizeWheel(truck_Info);
+		}
+
+	}
+
+}
+
