@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b748a5ad06ce154ea641a1e8f569be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desCollider: {fileID: 124581583}
+  descollider: {fileID: 124581583}
   Guard: {fileID: 2058755272}
 --- !u!23 &124581585
 MeshRenderer:
@@ -4562,7 +4562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b748a5ad06ce154ea641a1e8f569be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desCollider: {fileID: 0}
+  descollider: {fileID: 0}
   Guard: {fileID: 0}
 --- !u!1 &496444155
 GameObject:
