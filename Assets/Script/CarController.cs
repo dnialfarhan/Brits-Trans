@@ -27,6 +27,10 @@ public class CarController : MonoBehaviour
 	public float maxSteeringAngle;
 	public List<CarController_Manager> truck_Infos;
 
+	public float boostSpeed = 5.0f;
+	private float lastBoost;
+	public float boostCooldown = 2.0f;
+
 
 	private void Start()
 	{
@@ -83,6 +87,16 @@ public class CarController : MonoBehaviour
 			truck_Info.rightWheel.brakeTorque = brakeTorque;
 
 			VisualizeWheel(truck_Info);
+		}
+
+	}
+
+	public void Boost()
+	{
+		if (Time.time - lastBoost > boostCooldown)
+		{
+			rb.AddForce(rb.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
+			lastBoost = Time.time;
 		}
 
 	}
