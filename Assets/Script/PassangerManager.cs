@@ -9,11 +9,15 @@ public class PassangerManager : MonoBehaviour {
 
     public GameObject Destination;
 
+    public GameObject Passanger;
+
     public void Awake()
     {
         guardIMG.SetActive(false);
 
         Destination.SetActive(false);
+
+        Passanger.SetActive(true);
     }
 
     public void OnTriggerEnter(Collider col)
@@ -22,7 +26,7 @@ public class PassangerManager : MonoBehaviour {
         {
             guardIMG.SetActive(true);
 
-            Debug.Log("Arep babi!");
+            Passanger.SetActive(false);
 
             Destroy(gameObject);
 
