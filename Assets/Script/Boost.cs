@@ -3,17 +3,15 @@
 * http://twitter.com/dfkh_/
 */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boost : MonoBehaviour {
 
-	public CarController CC;
+	public CarController carControl;
 
 	public void Awake()
 	{
-		CC = GameObject.FindGameObjectWithTag("Player").GetComponent<CarController>();
+		carControl = GameObject.FindGameObjectWithTag("Player").GetComponent<CarController>();
 	}
 
 	// Update is called once per frame
@@ -21,7 +19,7 @@ public class Boost : MonoBehaviour {
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			CC.Boost();
+			carControl.Boost();
 		}
 	}
 }
