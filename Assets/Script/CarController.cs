@@ -8,7 +8,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 [System.Serializable]
-public class CarController_Manager : System.Object {
+public class CarController_Manager : System.Object
+{
 
 	public WheelCollider leftWheel;
 	public GameObject leftWheelMesh;
@@ -100,6 +101,4 @@ public class CarController : MonoBehaviour
 		}
 
 	}
-
 }
-
