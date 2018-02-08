@@ -2643,6 +2643,104 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: 09c5e3e3de03e99499865b7995443936, type: 3}
   m_PrefabInternal: {fileID: 2111067375}
+--- !u!1001 &1250437698
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -28.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -14.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.6087615
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7933533
+      objectReference: {fileID: 0}
+    - target: {fileID: 444382, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: ShapeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: SizeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: RotationBySpeedModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: ColorBySpeedModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: RotationModule.x.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: RotationModule.x.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: RotationModule.y.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: RotationModule.y.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19863968, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7fc5a9c88bba8404ea748818cfc9ec10, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1257879479
 GameObject:
   m_ObjectHideFlags: 0
