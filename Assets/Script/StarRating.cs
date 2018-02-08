@@ -17,8 +17,9 @@ public class StarRating : MonoBehaviour {
 	{
 		if(other.tag == "Player")
 		{
-			//Instantiate Object
-			Instantiate(pickupEffect, transform.position, transform.rotation);
+            //Instantiate Object
+            Instantiate(pickupEffect, transform.position, transform.rotation);
+            
 
 			//Add effect
 			PlayerStat.GetComponent<PlayerStat>().AddScore();
