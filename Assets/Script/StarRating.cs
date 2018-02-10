@@ -12,6 +12,13 @@ public class StarRating : MonoBehaviour {
 
 	public GameObject PlayerStat;
 
+	public float Rotator = 200f;
+
+
+	public void Update()
+	{
+		transform.Rotate(new Vector3(0, 0, Rotator) * Time.deltaTime);
+	}
 
 	public void OnTriggerEnter(Collider other)
 	{

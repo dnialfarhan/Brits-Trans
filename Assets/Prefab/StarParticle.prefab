@@ -3432,7 +3432,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 05cefe6b52b63b74aaebe496dc8bfcc2, type: 2}
+  - {fileID: 2100000, guid: 9005b93614c1c28449e5e170b101f56b, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -3453,7 +3453,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 4
   m_SortMode: 2
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5

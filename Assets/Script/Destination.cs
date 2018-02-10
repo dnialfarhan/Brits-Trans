@@ -6,12 +6,18 @@ public class Destination : MonoBehaviour {
 
     public GameObject descollider;
     public GameObject Guard;
+	public GameObject indicatorPos;
 
+	public GameObject Indicator;
 	// Use this for initialization
-	void Awake ()
+	void Start ()
     {
         descollider.SetActive(true);
+
+		Instantiate(Indicator, indicatorPos.transform.position, Quaternion.Euler(90, 0, 0));
     }
+
+	
 
     public void OnTriggerEnter(Collider des)
     {
@@ -21,4 +27,6 @@ public class Destination : MonoBehaviour {
             Guard.SetActive(false);
         }
     }
+
+
 }
