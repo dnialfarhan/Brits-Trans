@@ -11,7 +11,7 @@ using TMPro;
 
 public class PlayerStat : MonoBehaviour {
 
-	public Text scoreText;
+	public TextMeshProUGUI scoreText;
 
 	public float scoreValue;
 

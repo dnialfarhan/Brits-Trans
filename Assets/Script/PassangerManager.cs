@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +10,8 @@ public class PassangerManager : MonoBehaviour {
     public GameObject Destination;
 
     public GameObject Passanger;
+
+	public GameObject Indicator;
 
     public void Awake()
     {
@@ -29,6 +31,8 @@ public class PassangerManager : MonoBehaviour {
             Passanger.SetActive(false);
 
             Destroy(gameObject);
+
+			Destroy(Indicator);
 
             Destination.SetActive(true);
         }

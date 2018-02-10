@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class Destination : MonoBehaviour {
 
-    public GameObject descollider;
+    public GameObject desCollider;
     public GameObject Guard;
-	public GameObject indicatorPos;
-
-	public GameObject Indicator;
+	public GameObject desIndicator;
+	
 	// Use this for initialization
 	void Start ()
     {
-        descollider.SetActive(true);
+        desCollider.SetActive(true);
 
-		Instantiate(Indicator, indicatorPos.transform.position, Quaternion.Euler(90, 0, 0));
+		desIndicator.SetActive(true);
     }
 
 	
@@ -23,8 +22,9 @@ public class Destination : MonoBehaviour {
     {
         if(des.gameObject.tag == "Player")
         {
-            descollider.SetActive(false);
+            desCollider.SetActive(false);
             Guard.SetActive(false);
+			
         }
     }
 
