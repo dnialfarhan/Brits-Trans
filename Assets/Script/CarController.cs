@@ -4,6 +4,7 @@
 */
 
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -100,5 +101,23 @@ public class CarController : MonoBehaviour
 			lastBoost = Time.time;
 		}
 
+	}
+
+	public void Stop()
+	{
+		if(maxMotorTorque > 0f)
+		{
+			rb.isKinematic =true;
+
+			StartCoroutine("Continue");
+		}
+
+	}
+
+	IEnumerator Continue()
+	{
+		yield return new WaitForSeconds(3);
+
+		rb.isKinematic = false;
 	}
 }
