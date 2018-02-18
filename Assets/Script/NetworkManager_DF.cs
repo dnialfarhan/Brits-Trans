@@ -122,7 +122,7 @@ public class NetworkManager_DF : NetworkManager {
 	{
 		currentScene = SceneManager.GetActiveScene();
 
-		if (currentScene.name == "Menu")
+		if (currentScene.name == "NetworkMenu")
 		{
 			ActivatePanel("PanelMainMenu");
 		}

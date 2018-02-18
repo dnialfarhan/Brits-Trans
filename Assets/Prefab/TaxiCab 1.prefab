@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 114041633288919602}
   - component: {fileID: 114274200132749034}
   m_Layer: 0
-  m_Name: TaxiCab
+  m_Name: TaxiCab 1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -790,22 +790,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 120
-    i1: 93
-    i2: 151
-    i3: 43
-    i4: 215
-    i5: 146
-    i6: 122
-    i7: 180
-    i8: 248
-    i9: 6
-    i10: 4
-    i11: 210
+    i0: 128
+    i1: 201
+    i2: 115
+    i3: 144
+    i4: 113
+    i5: 32
+    i6: 60
+    i7: 20
+    i8: 27
+    i9: 34
+    i10: 92
+    i11: 177
     i12: 46
-    i13: 230
-    i14: 23
-    i15: 150
+    i13: 203
+    i14: 163
+    i15: 227
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
 --- !u!114 &114885876176308828
