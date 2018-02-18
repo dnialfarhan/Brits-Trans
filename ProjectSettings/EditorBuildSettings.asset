@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Level1(London).unity
     guid: 342291946690e66478537e263d809714
+  - enabled: 1
+    path: Assets/Scene/NetworkMenu.unity
+    guid: 85c493ae5c88e8245898f00380cbb834
