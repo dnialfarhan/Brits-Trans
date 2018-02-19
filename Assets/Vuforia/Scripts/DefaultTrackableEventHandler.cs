@@ -84,12 +84,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+		Time.timeScale = 1f;
     }
 
 
     protected virtual void OnTrackingLost()
     {
-        var rendererComponents = GetComponentsInChildren<Renderer>(true);
+		var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
@@ -104,6 +106,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+		Time.timeScale = 0f;
     }
 
     #endregion // PRIVATE_METHODS

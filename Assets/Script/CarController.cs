@@ -93,26 +93,29 @@ public class CarController : MonoBehaviour
 
 	}
 
-	public void Boost()
+	public void OnTriggerEnter(Collider other)
 	{
-		if (Time.time - lastBoost > boostCooldown)
+		if (other.gameObject.tag == "Boost")
 		{
-			rb.AddForce(rb.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
-			lastBoost = Time.time;
+			if (Time.time - lastBoost > boostCooldown)
+			{
+				rb.AddForce(rb.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
+				lastBoost = Time.time;
+			}
+
 		}
 
-	}
-
-	public void Stop()
-	{
-		if(maxMotorTorque > 0f)
+		if (other.gameObject.tag == "TrafficLight")
 		{
-			rb.isKinematic =true;
+			if (maxMotorTorque > 0f)
+			{
+				rb.isKinematic = true;
 
-			StartCoroutine("Continue");
+				StartCoroutine("Continue");
+			}
 		}
-
 	}
+
 
 	IEnumerator Continue()
 	{
@@ -120,4 +123,6 @@ public class CarController : MonoBehaviour
 
 		rb.isKinematic = false;
 	}
+
+	
 }
