@@ -15,7 +15,7 @@ using TMPro;
 
 public class NetworkManager_DF : NetworkManager {
 
-	//private string ipAddress;
+	private string ipAddress;
 	private string mapSelected = "Map 1";
 	private int port = 7777;
 	private int characterSelected = 0;
