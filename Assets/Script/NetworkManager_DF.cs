@@ -240,7 +240,7 @@ public class NetworkManager_DF : NetworkManager {
 	{
 		foreach (Transform child in contentRoomList)
 		{
-			Destroy(child.gameObject);
+			DestroyImmediate(child.gameObject, true);
 		}
 	}
 
