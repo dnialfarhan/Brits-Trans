@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: ASdCBqT/////AAAAmZrtU0/3X0wGpu6GQYUtqpROEnsPOHDmH50O55dfD1KsVCPklBHDry8+dYHA2GDgsXcoxim7KeTYbPqRaGI/yWvEvwf5VchmwgtbnqgK/MMYHCmX4g1yk11Wm+nqc22Phu+oPYCzNGOvvArohERTpUWE7tcewnBiNjelSondjdBeyYqvKGACURuLefd/KKZeSZcKfqC2xFD94TDKjr0tLdJaFRbqfLRf5r+SInEqBWxgNLpvoCMj3VpYSfXohpSmHz9HwFd0CkKPBuupBaR0tXyasBQIIY8kIZ8H1ZKujJNa0f/bMX1xeQriVrg62rIt9GdnePesa8UJjPnbBEII9ZCTyrPVvZmgsJMdVDu/rZmf
-    ufoLicenseKey: QVJKT0EvNy8vLy8vQUFBQUtFdDdIa2hBN2tPUGwxYjRZcXA2VDk0MGxScHBWeFcxR3ArVEh4NU9CdDJDZ1dWZWlmZ3gxNnF3K09oeVlIT1JyL09qTFlVSldlUmRxeXhwTEljREl6RWw5NTlDRTBldjBuZmQ4Y0w5QnFWQXk5eUtLa21IUWEzN2h5d2lEU3ZJZzlTbURqRkNXUVRmREpnTGdPck1ESTJ4N1hMSFFSMjh4SWxwRVU3ekNjVlRrNWtCTmJjc0FQWVBFQkhNemhwTyt6K2RTRzdCdzJIMmZ6VFRlOXhhbVJROGFHbGJwV0J1SDU4MWtyMEQ1VXNkYWNxNzZzSjhjVTNGYkxpR1hVSjA5Q2YrbVV6cVROMXYraDJPY2p2N2VNcE1qV3B4VDdzTmNZZnlMQzZZek92alFUYmsraWpnTnprd0E1VmN3czY5dS90SVJubnlDQzBwMVJIc1l3R1BPMjNrYjQrOWw0Q0IxR0RLRXBraVNPT08=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVMrNk5DVC8vLy8vQUFBQUtMUGU0Q0ZUUkU3V3ZkOWZQRG96cy9FZE83R1BpYVZyejIzekRXM24rWWFDNzZrR1FNb3ZOSXkySlErREdibGJYMnIyemtTcVMzVlZOeWszU0E5Sis1eGNhVmpBOEE5RGRuUTMvUXY1aXJjWGY4TVdLbUwrQWt5TTFkRGRaRDVsVUE1WkZRV3NlZkZmemExekV2OWdtRkRNUWZEcnA5V3hFeG1MZ3BUbzdUemhkc3RaYVR4L2g4M012ak9LQ3cvUml3Z3U0aG1SazMwRTJ6ZDUrbWZaUlcyU0ZlcC92VThnVnFCRnNVWHAvOFlaVnd0dmkvcmppMEFKaHdmeUhxSDhRbWRUZ1hlbTNkajdLdm5PemRVRDZwaHpybnpyVGRlR2F1NmJzYXk4VllTcFNaYUJhaGlNRlNlbTM5TXF6eWtGUkZ5QTJvM0VHNTd1YTZaYzJSeUZmUExBNFR6VG5pUFYvV256Z0REa29yS1E=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -44,26 +44,21 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-<<<<<<< HEAD
     - VuforiaMars_Images
-    - Brits_Trans
+    - VuforiaMars_VuMark
     dataSetsToActivate:
     - VuforiaMars_Images
-=======
-    - Brits_Trans
-    dataSetsToActivate:
->>>>>>> 6af29a4d0c1b82f079750ceba97c27374324220b
-    - Brits_Trans
+    - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
     numDivisions: 2
     videoBackgroundShader: {fileID: 15311, guid: 0000000000000000f000000000000000,
       type: 0}
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
-    videoBackgroundEnabled: 0
+    videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 1
-    autoStartTracker: 1
+    autoInitTracker: 0
+    autoStartTracker: 0
     trackingMode: 0
     posePrediction: 0
     modelCorrectionMode: 0
@@ -75,5 +70,5 @@ MonoBehaviour:
   webcam:
     deviceNameSetInEditor: 
     flipHorizontally: 0
-    turnOffWebCam: 1
+    turnOffWebCam: 0
     renderTextureLayer: 30
