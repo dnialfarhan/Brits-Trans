@@ -11,6 +11,26 @@ using UnityEngine.UI;
 using UnityEngine.Networking.Match;
 using UnityEngine.Networking.Types;
 using UnityEngine.Networking.NetworkSystem;
+<<<<<<< HEAD
+=======
+using TMPro;
+
+public class NetworkManager_DF : NetworkManager {
+
+	private string ipAddress;
+	private string mapSelected = "Map 1";
+	private int port = 7777;
+	private int characterSelected = 0;
+	private short playerControllerID = 0;
+
+	public Text textConnectionInfo;
+	//public Text ipAddressTextField;
+	public Text matchRoomNameText;
+	public TextMeshProUGUI mapSelectedText;
+	public TextMeshProUGUI characterSelectedText;
+
+	private Scene currentScene;
+>>>>>>> 6af29a4d0c1b82f079750ceba97c27374324220b
 
 
 	public class NetworkManager_DF : NetworkManager
@@ -239,6 +259,7 @@ using UnityEngine.Networking.NetworkSystem;
 
 		void OnInternetCreateMatch(bool success, string extendedInfo, MatchInfo matchInfo)
 		{
+<<<<<<< HEAD
 			if (success)
 			{
 				textConnectionInfo.text = "Create Match Succeeded.";
@@ -251,6 +272,9 @@ using UnityEngine.Networking.NetworkSystem;
 			{
 				textConnectionInfo.text = "Create Match Failed.";
 			}
+=======
+			DestroyImmediate(child.gameObject, true);
+>>>>>>> 6af29a4d0c1b82f079750ceba97c27374324220b
 		}
 
 		void ClearContentRoomList()

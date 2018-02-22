@@ -44,10 +44,15 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+<<<<<<< HEAD
     - VuforiaMars_Images
     - Brits_Trans
     dataSetsToActivate:
     - VuforiaMars_Images
+=======
+    - Brits_Trans
+    dataSetsToActivate:
+>>>>>>> 6af29a4d0c1b82f079750ceba97c27374324220b
     - Brits_Trans
   videoBackground:
     clippingMode: 0
