@@ -29,7 +29,7 @@ public class StarRating : MonoBehaviour {
             
 
 			//Add effect
-			PlayerStat.GetComponent<PlayerStat>().AddScore();
+			PlayerStat.GetComponent<PlayerStat>().StarRating();
 
 
 			//Destroy Object

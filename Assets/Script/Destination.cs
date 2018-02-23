@@ -7,11 +7,15 @@ public class Destination : MonoBehaviour {
     public GameObject desCollider;
     public GameObject Guard;
 	public GameObject desIndicator;
+
+	public PlayerStat Stat;
 	
 	// Use this for initialization
 	void Start ()
     {
-        desCollider.SetActive(true);
+		Stat = GetComponent<PlayerStat>();
+
+		desCollider.SetActive(true);
 
 		desIndicator.SetActive(true);
     }
@@ -24,6 +28,8 @@ public class Destination : MonoBehaviour {
         {
             desCollider.SetActive(false);
             Guard.SetActive(false);
+
+			Stat.PassangerScore();
 			
         }
     }

@@ -3,43 +3,31 @@
 * http://twitter.com/dfkh_/
 */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour {
 
-	public Image fillImg;
-	public float timeAmt = 10f;
-	public float time;
+	public float countTimer = 90f;
 
-	public GameObject GameOver;
+	[SerializeField]
+	private TextMeshProUGUI CountDown;
 
-	private void Awake()
+	private void Start()
 	{
-		GameOver.SetActive(false);
+		CountDown = GetComponent<TextMeshProUGUI>();	
 	}
 
-	// Use this for initialization
-	void Start () 
+	private void Update()
 	{
-		fillImg = this.GetComponent<Image>();
-		time = timeAmt;
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		if(time > 0)
-		{
-			time -= Time.deltaTime;
-			fillImg.fillAmount = time / timeAmt;
-		}
+		countTimer -= Time.deltaTime;
 
-		if(time < 0)
-		{
-			GameOver.SetActive(true);
-		}
+		string minute = ((int) countTimer / 60).ToString();
+
+		string second = (countTimer % 60).ToString("f0");
+
+		CountDown.text = minute + ":" + second;
 	}
+
 }

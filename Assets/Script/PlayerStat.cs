@@ -12,18 +12,25 @@ using TMPro;
 public class PlayerStat : MonoBehaviour {
 
 	public TextMeshProUGUI scoreText;
+	public TextMeshProUGUI passangerText;
 
-	public float scoreValue;
+	private float starRating;
+	private float passangerScore;
 
 	public void Awake()
 	{
-		scoreValue = 0;
+		starRating = 0;
 	}
 
-	public void AddScore()
+	public void StarRating()
 	{
-		scoreValue = scoreValue + 1;
-		scoreText.text = "Star Rating: " + scoreValue;
+		starRating = starRating + 1;
+		scoreText.text = starRating + "/3";
+	}
 
+	public void PassangerScore()
+	{
+		passangerScore = passangerScore + 1;
+		passangerText.text = passangerScore + "/3";
 	}
 }
