@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Destination : MonoBehaviour {
 
-    public GameObject desCollider;
-    public GameObject Guard;
-	public GameObject desIndicator;
+	[SerializeField]
+	private GameObject desCollider;
+	[SerializeField]
+	private GameObject Passanger;
+	[SerializeField]
+	private GameObject desIndicator;
+	[SerializeField]
+	private GameObject PickUp;
 
 	public PlayerStat Stat;
 	
@@ -27,9 +30,11 @@ public class Destination : MonoBehaviour {
         if(des.gameObject.tag == "Player")
         {
             desCollider.SetActive(false);
-            Guard.SetActive(false);
+            Passanger.SetActive(false);
 
 			Stat.PassangerScore();
+
+			PickUp.SetActive(true);
 			
         }
     }

@@ -1,39 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PassangerManager : MonoBehaviour {
 
-    public GameObject guardIMG;
-
+    public GameObject PassangerIMG;
     public GameObject Destination;
-
-    public GameObject Passanger;
-
+	public GameObject PassangerChar;
 	public GameObject Indicator;
 
     public void Awake()
     {
-        guardIMG.SetActive(false);
-
+        PassangerIMG.SetActive(false);
         Destination.SetActive(false);
-
-        Passanger.SetActive(true);
+        PassangerChar.SetActive(true);
     }
 
     public void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.tag == "Player")
         {
-            guardIMG.SetActive(true);
-
-            Passanger.SetActive(false);
-
+			PassangerIMG.SetActive(true);
+            PassangerChar.SetActive(false);
             Destroy(gameObject);
-
 			Destroy(Indicator);
-
             Destination.SetActive(true);
         }
 
