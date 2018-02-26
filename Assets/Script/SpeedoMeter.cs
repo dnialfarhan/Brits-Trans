@@ -8,7 +8,7 @@ using UnityEngine;
 public class SpeedoMeter : MonoBehaviour {
 
 	static float minAngle = 190f;
-	static float maxAngle = 261;
+	static float maxAngle = -99f;
 	static SpeedoMeter thisSpeedo;
 
 	// Use this for initialization
