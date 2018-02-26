@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1660997959075316}
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -82.30366, y: 18.01131, z: 64.72998}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,7 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797248c4c586dca40aac3f19a5aef051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarCamera: {fileID: 0}
 --- !u!114 &114879700976013916
 MonoBehaviour:
   m_ObjectHideFlags: 1
