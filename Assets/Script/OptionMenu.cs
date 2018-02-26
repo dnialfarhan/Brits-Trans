@@ -1,0 +1,25 @@
+/*
+* Copyright (c) Danial Farhan
+* http://twitter.com/dfkh_/
+*/
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+
+public class OptionMenu : MonoBehaviour {
+
+	public AudioMixer audioMixer;
+
+	public void SetVolume(float volume)
+	{
+		audioMixer.SetFloat("volume", volume);
+	}
+
+	public void SetQuality(int qualityIndex)
+	{
+		QualitySettings.SetQualityLevel(qualityIndex);
+	}
+
+}

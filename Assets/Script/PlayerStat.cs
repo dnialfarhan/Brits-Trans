@@ -25,7 +25,7 @@ public class PlayerStat : MonoBehaviour {
 	public void StarRating()
 	{
 		starRating = starRating + 1;
-		scoreText.text = starRating + "/3";
+		scoreText.text = starRating + "/5";
 	}
 
 	public void PassangerScore()

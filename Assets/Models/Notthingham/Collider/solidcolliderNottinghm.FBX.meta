@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: 24e676a7b36a8aa4795836e635586123
+timeCreated: 1519546779
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box007
+    100002: Box010
+    100004: Box011
+    100006: Box012
+    100008: bustop
+    100010: conifer007
+    100012: conifer008
+    100014: conifer009
+    100016: conifer010
+    100018: coniferclone
+    100020: lampclone
+    100022: lampclone001
+    100024: lampclone002
+    100026: lampclone003
+    100028: lampclone004
+    100030: lampclone005
+    100032: lampclone006
+    100034: lampclone007
+    100036: lampclone008
+    100038: lampclone009
+    100040: lampclone010
+    100042: orangetree004
+    100044: petrolstation
+    100046: platform010
+    100048: platform011
+    100050: platform012
+    100052: robinhoodclone
+    100054: //RootNode
+    100056: stallclone
+    100058: walk_road004
+    100060: walk_road005
+    100062: walk_road006
+    100064: windmill_clone
+    100066: wollatonhallsideclone
+    400000: Box007
+    400002: Box010
+    400004: Box011
+    400006: Box012
+    400008: bustop
+    400010: conifer007
+    400012: conifer008
+    400014: conifer009
+    400016: conifer010
+    400018: coniferclone
+    400020: lampclone
+    400022: lampclone001
+    400024: lampclone002
+    400026: lampclone003
+    400028: lampclone004
+    400030: lampclone005
+    400032: lampclone006
+    400034: lampclone007
+    400036: lampclone008
+    400038: lampclone009
+    400040: lampclone010
+    400042: orangetree004
+    400044: petrolstation
+    400046: platform010
+    400048: platform011
+    400050: platform012
+    400052: robinhoodclone
+    400054: //RootNode
+    400056: stallclone
+    400058: walk_road004
+    400060: walk_road005
+    400062: walk_road006
+    400064: windmill_clone
+    400066: wollatonhallsideclone
+    2100000: 17 - Default
+    2300000: Box007
+    2300002: Box010
+    2300004: Box011
+    2300006: Box012
+    2300008: bustop
+    2300010: conifer007
+    2300012: conifer008
+    2300014: conifer009
+    2300016: conifer010
+    2300018: coniferclone
+    2300020: lampclone
+    2300022: lampclone001
+    2300024: lampclone002
+    2300026: lampclone003
+    2300028: lampclone004
+    2300030: lampclone005
+    2300032: lampclone006
+    2300034: lampclone007
+    2300036: lampclone008
+    2300038: lampclone009
+    2300040: lampclone010
+    2300042: orangetree004
+    2300044: petrolstation
+    2300046: platform010
+    2300048: platform011
+    2300050: platform012
+    2300052: robinhoodclone
+    2300054: stallclone
+    2300056: walk_road004
+    2300058: walk_road005
+    2300060: walk_road006
+    2300062: windmill_clone
+    2300064: wollatonhallsideclone
+    3300000: Box007
+    3300002: Box010
+    3300004: Box011
+    3300006: Box012
+    3300008: bustop
+    3300010: conifer007
+    3300012: conifer008
+    3300014: conifer009
+    3300016: conifer010
+    3300018: coniferclone
+    3300020: lampclone
+    3300022: lampclone001
+    3300024: lampclone002
+    3300026: lampclone003
+    3300028: lampclone004
+    3300030: lampclone005
+    3300032: lampclone006
+    3300034: lampclone007
+    3300036: lampclone008
+    3300038: lampclone009
+    3300040: lampclone010
+    3300042: orangetree004
+    3300044: petrolstation
+    3300046: platform010
+    3300048: platform011
+    3300050: platform012
+    3300052: robinhoodclone
+    3300054: stallclone
+    3300056: walk_road004
+    3300058: walk_road005
+    3300060: walk_road006
+    3300062: windmill_clone
+    3300064: wollatonhallsideclone
+    4300000: coniferclone
+    4300002: conifer007
+    4300004: conifer008
+    4300006: conifer009
+    4300008: conifer010
+    4300010: windmill_clone
+    4300012: walk_road004
+    4300014: walk_road005
+    4300016: walk_road006
+    4300018: petrolstation
+    4300020: bustop
+    4300022: stallclone
+    4300024: orangetree004
+    4300026: Box007
+    4300028: platform010
+    4300030: platform011
+    4300032: platform012
+    4300034: wollatonhallsideclone
+    4300036: Box010
+    4300038: robinhoodclone
+    4300040: Box011
+    4300042: Box012
+    4300044: lampclone
+    4300046: lampclone001
+    4300048: lampclone002
+    4300050: lampclone003
+    4300052: lampclone004
+    4300054: lampclone005
+    4300056: lampclone006
+    4300058: lampclone007
+    4300060: lampclone008
+    4300062: lampclone009
+    4300064: lampclone010
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

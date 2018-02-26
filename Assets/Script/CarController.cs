@@ -114,6 +114,19 @@ public class CarController : MonoBehaviour
 				StartCoroutine("Continue");
 			}
 		}
+
+		if (other.gameObject.tag == "SlowCollider")
+		{
+			maxMotorTorque = 25f;
+		}
+	}
+
+	public void OnTriggerExit(Collider other)
+	{
+		if (other.gameObject.tag == "SlowCollider")
+		{
+			maxMotorTorque = 50f;
+		}
 	}
 
 

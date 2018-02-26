@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Boost
   - TrafficLight
+  - SlowCollider
   layers:
   - Default
   - TransparentFX
