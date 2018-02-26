@@ -54,9 +54,9 @@ public class CarController : MonoBehaviour
 	public void Update()
 	{
 
-		float motor = maxMotorTorque * Input.GetAxis("Vertical");
-		float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
-		float brakeTorque = Mathf.Abs(Input.GetAxis("Jump"));
+		float motor = maxMotorTorque * CrossPlatformInputManager.GetAxis("Vertical");
+		float steering = maxSteeringAngle * CrossPlatformInputManager.GetAxis("Horizontal");
+		float brakeTorque = Mathf.Abs(CrossPlatformInputManager.GetAxis("Jump"));
 
 		if (brakeTorque > 0.001)
 		{
@@ -115,19 +115,19 @@ public class CarController : MonoBehaviour
 			}
 		}
 
-		if (other.gameObject.tag == "SlowCollider")
+		/*if (other.gameObject.tag == "SlowCollider")
 		{
 			maxMotorTorque = 25f;
-		}
+		}*/
 	}
 
-	public void OnTriggerExit(Collider other)
+	/*public void OnTriggerExit(Collider other)
 	{
 		if (other.gameObject.tag == "SlowCollider")
 		{
 			maxMotorTorque = 50f;
 		}
-	}
+	}*/
 
 
 	IEnumerator Continue()

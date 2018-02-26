@@ -1480,6 +1480,11 @@ Prefab:
       propertyPath: m_AutoCreatePlayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114418849014285232, guid: c197a012944c0d740be83bfcfcbea9de,
+        type: 2}
+      propertyPath: m_OnlineScene
+      value: Level1(Nottingham)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c197a012944c0d740be83bfcfcbea9de, type: 2}
   m_IsPrefabParent: 0

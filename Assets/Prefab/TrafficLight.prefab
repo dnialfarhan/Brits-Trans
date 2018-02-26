@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4115485380065454}
   - component: {fileID: 95168934424239562}
   - component: {fileID: 320860320640218706}
-  - component: {fileID: 114983297492698134}
   m_Layer: 0
   m_Name: TrafficLight
   m_TagString: Untagged
@@ -648,18 +647,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114983297492698134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1022538125579342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d91e47c3c0213b145baea2064d59c843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CC: {fileID: 0}
 --- !u!320 &320860320640218706
 PlayableDirector:
   m_ObjectHideFlags: 1
