@@ -16,11 +16,11 @@ public class Destination : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-		Stat = GetComponent<PlayerStat>();
+		//Stat = GetComponent<PlayerStat>();
 
 		desCollider.SetActive(true);
 
-		desIndicator.SetActive(true);
+		//desIndicator.SetActive(true);
     }
 
 	
@@ -29,15 +29,27 @@ public class Destination : MonoBehaviour {
     {
         if(des.gameObject.tag == "Player")
         {
-            desCollider.SetActive(false);
-            Passanger.SetActive(false);
+			FindObjectOfType<AudioManager>().Play("DropOff");
+			FindObjectOfType<AudioManager>().Play("Yay");
+
+			Passanger.SetActive(false);
 
 			Stat.PassangerScore();
 
+			DisableIndicator();
+
 			PickUp.SetActive(true);
-			
-        }
+
+			desCollider.SetActive(false);
+
+		}
+
     }
+
+	private void DisableIndicator()
+	{
+		desIndicator.SetActive(false);
+	}
 
 
 }

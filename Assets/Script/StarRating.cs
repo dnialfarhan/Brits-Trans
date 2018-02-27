@@ -31,6 +31,8 @@ public class StarRating : MonoBehaviour {
 			//Add effect
 			PlayerStat.GetComponent<PlayerStat>().StarRating();
 
+			FindObjectOfType<AudioManager>().Play("StarRating");
+
 
 			//Destroy Object
 			Destroy(gameObject);

@@ -651,7 +651,7 @@ Rigidbody:
   m_Mass: 850
   m_Drag: 0.1
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMotorTorque: 300
-  maxSteeringAngle: 15
+  maxSteeringAngle: 35
   truck_Infos:
   - leftWheel: {fileID: 146373123374153138}
     leftWheelMesh: {fileID: 1054676583557898}
@@ -762,6 +762,7 @@ MonoBehaviour:
     reverseTurn: 0
   boostSpeed: 3
   boostCooldown: 2
+  moveSpeed: 2
 --- !u!146 &146062985000326808
 WheelCollider:
   m_ObjectHideFlags: 1

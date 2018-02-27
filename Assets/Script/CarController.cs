@@ -33,6 +33,8 @@ public class CarController : MonoBehaviour
 	private float lastBoost;
 	public float boostCooldown = 2.0f;
 
+	public float moveSpeed = 250f;
+	public float rotSpeed = 0.5f;
 
 	private void Start()
 	{
@@ -54,9 +56,13 @@ public class CarController : MonoBehaviour
 	public void Update()
 	{
 
-		float motor = maxMotorTorque * CrossPlatformInputManager.GetAxis("Vertical");
-		float steering = maxSteeringAngle * CrossPlatformInputManager.GetAxis("Horizontal");
-		float brakeTorque = Mathf.Abs(CrossPlatformInputManager.GetAxis("Jump"));
+		/*
+		float motor = maxMotorTorque * Input.GetAxis("Vertical");
+		float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+		float brakeTorque = Mathf.Abs(Input.GetAxis("Jump"));
+		
+
+
 
 		if (brakeTorque > 0.001)
 		{
@@ -87,9 +93,20 @@ public class CarController : MonoBehaviour
 
 			truck_Info.leftWheel.brakeTorque = brakeTorque;
 			truck_Info.rightWheel.brakeTorque = brakeTorque;
+			
 
 			VisualizeWheel(truck_Info);
-		}
+
+
+		}*/
+
+		float h = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+		float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+
+		float r = Input.GetAxis("Horizontal") * Time.deltaTime * rotSpeed;
+
+		transform.Translate(h, 0, v);
+		transform.Rotate(0, r, 0);
 
 	}
 
@@ -100,6 +117,9 @@ public class CarController : MonoBehaviour
 			if (Time.time - lastBoost > boostCooldown)
 			{
 				rb.AddForce(rb.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
+
+				FindObjectOfType<AudioManager>().Play("Boost");
+
 				lastBoost = Time.time;
 			}
 

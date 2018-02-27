@@ -35,10 +35,17 @@ using UnityEngine.Networking.NetworkSystem;
 		public GameObject[] characterPrefabs;
 		private short playerControllerID = 0;
 
+		//private GameObject imageTargetObject;
 
 
-		#region Unity Methods
-		private void OnEnable()
+
+	public void Start()
+	{
+		//imageTargetObject = GameObject.Find("ImageTarget");
+	}
+
+	#region Unity Methods
+	private void OnEnable()
 		{
 			RegisterCharacterPrefabs();
 			SceneManager.sceneLoaded += OnMySceneLoaded;
@@ -82,6 +89,7 @@ using UnityEngine.Networking.NetworkSystem;
 
 			Transform chosenSpawnPoint = NetworkManager.singleton.startPositions[Random.Range(0, NetworkManager.singleton.startPositions.Count)];
 			GameObject player = Instantiate(characterPrefabs[id], chosenSpawnPoint.position, chosenSpawnPoint.rotation) as GameObject;
+			//player.transform.parent = imageTargetObject.transform;
 			NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
 		}
 

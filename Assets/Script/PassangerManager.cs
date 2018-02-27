@@ -18,6 +18,8 @@ public class PassangerManager : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
+			FindObjectOfType<AudioManager>().Play("PickUp");
+
 			PassangerIMG.SetActive(true);
             PassangerChar.SetActive(false);
             Destroy(gameObject);
