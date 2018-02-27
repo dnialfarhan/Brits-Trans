@@ -29,9 +29,9 @@ public class CarController_Network : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		float translation = Input.GetAxis("Vertical") * moveSpeed;
-		float rotation = Input.GetAxis("Horizontal") * rotSpeed;
-		float brake = Mathf.Abs(Input.GetAxis("Jump"));
+		float translation = CrossPlatformInputManager.GetAxis("Vertical") * moveSpeed;
+		float rotation = CrossPlatformInputManager.GetAxis("Horizontal") * rotSpeed;
+		float brake = Mathf.Abs(CrossPlatformInputManager.GetAxis("Jump"));
 		translation *= Time.deltaTime;
 		//rotation *= Time.deltaTime;
 

@@ -7,10 +7,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu_Audio : MonoBehaviour {
+public class InGameSound : MonoBehaviour {
 
-	private void Start()
+	// Use this for initialization
+	void Start () 
 	{
-		FindObjectOfType<AudioManager>().Play("MainMenu");
+		FindObjectOfType<AudioManager>().Play("InGame");
 	}
+	
+	
 }
