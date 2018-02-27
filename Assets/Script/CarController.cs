@@ -34,7 +34,8 @@ public class CarController : MonoBehaviour
 	public float boostCooldown = 2.0f;
 
 	public float moveSpeed = 250f;
-	public float rotSpeed = 0.5f;
+	public float rotSpeed = 500f;
+
 
 	private void Start()
 	{
@@ -56,10 +57,10 @@ public class CarController : MonoBehaviour
 	public void Update()
 	{
 
-		/*
-		float motor = maxMotorTorque * Input.GetAxis("Vertical");
-		float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
-		float brakeTorque = Mathf.Abs(Input.GetAxis("Jump"));
+		
+		float motor = maxMotorTorque * CrossPlatformInputManager.GetAxis("Vertical");
+		float steering = maxSteeringAngle * CrossPlatformInputManager.GetAxis("Horizontal");
+		float brakeTorque = Mathf.Abs(CrossPlatformInputManager.GetAxis("Jump"));
 		
 
 
@@ -98,16 +99,33 @@ public class CarController : MonoBehaviour
 			VisualizeWheel(truck_Info);
 
 
-		}*/
+		}
 
-		float h = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-		float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+		/*
 
-		float r = Input.GetAxis("Horizontal") * Time.deltaTime * rotSpeed;
+		float translation = Input.GetAxis("Vertical") * moveSpeed;
+		float rotation = Input.GetAxis("Horizontal") * rotSpeed;
+		float brake = Mathf.Abs(Input.GetAxis("Jump"));
+		translation *= Time.deltaTime;
+		//rotation *= Time.deltaTime;
 
-		transform.Translate(h, 0, v);
-		transform.Rotate(0, r, 0);
+		rb.AddForce(this.transform.forward * translation*400);
+		rb.AddTorque(this.transform.up * rotation* 50);
 
+		if (brake > 0.001)
+		{
+			brake = moveSpeed;
+			translation = 0;
+			rb.drag = 10f;
+		}
+		else
+		{
+			brake = 0;
+			rb.drag = 2.5f;
+		}
+
+		SpeedoMeter.ShowSpeedo(rb.velocity.magnitude, 0, 200);
+		*/
 	}
 
 	public void OnTriggerEnter(Collider other)
@@ -117,6 +135,7 @@ public class CarController : MonoBehaviour
 			if (Time.time - lastBoost > boostCooldown)
 			{
 				rb.AddForce(rb.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
+
 
 				FindObjectOfType<AudioManager>().Play("Boost");
 
