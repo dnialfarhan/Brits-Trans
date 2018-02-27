@@ -21822,7 +21822,6 @@ GameObject:
   m_Component:
   - component: {fileID: 943117406}
   - component: {fileID: 1830533820}
-  - component: {fileID: 1830533819}
   - component: {fileID: 1830533818}
   m_Layer: 0
   m_Name: TaxiCab_SinglePlayer
@@ -21847,39 +21846,6 @@ MonoBehaviour:
   rotSpeed: 500
   boostSpeed: 5
   boostCooldown: 2
---- !u!114 &1830533819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114816625193992260, guid: eaa61b2ecceb78e40af4819536de143c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1830533817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 234
-    i1: 166
-    i2: 27
-    i3: 46
-    i4: 204
-    i5: 235
-    i6: 120
-    i7: 228
-    i8: 10
-    i9: 244
-    i10: 129
-    i11: 149
-    i12: 54
-    i13: 222
-    i14: 20
-    i15: 60
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!54 &1830533820
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22246,6 +22212,11 @@ Prefab:
     - target: {fileID: 4656594368602900, guid: 825f715de881a4b4ab417d5269a4ce70, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114330352800600152, guid: 825f715de881a4b4ab417d5269a4ce70,
+        type: 2}
+      propertyPath: sounds.Array.data[6].loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 825f715de881a4b4ab417d5269a4ce70, type: 2}
