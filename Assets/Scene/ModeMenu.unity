@@ -373,8 +373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.06499873, y: -0.44999966}
+  m_SizeDelta: {x: -0.12999746, y: 0.30000073}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &707150805
 MonoBehaviour:
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 100.14874, y: 25.065487, z: 99.65783, w: 24.546267}
+  m_margin: {x: -0.2421515, y: -0.47567302, z: -0.17945798, w: 0.42407143}
   m_textInfo:
     textComponent: {fileID: 707150805}
     characterCount: 12
@@ -795,9 +795,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 821955133}
-        m_MethodName: Back
-        m_Mode: 1
+      - m_Target: {fileID: 865676863}
+        m_MethodName: LevelLoad
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 1494340502}
   - component: {fileID: 1494340501}
   m_Layer: 5
-  m_Name: MultiPlayer
+  m_Name: Singleplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1419,8 +1419,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.3499984, y: -0.61000013}
+  m_SizeDelta: {x: 0.49999678, y: 0.1799998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1774349654
 MonoBehaviour:
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 100.26204, y: 24.756052, z: 99.93711, w: 24.75605}
+  m_margin: {x: -0.12885654, y: -0.31329522, z: -0.0015092909, w: 0.3642458}
   m_textInfo:
     textComponent: {fileID: 1774349654}
     characterCount: 11
@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 1847586896}
   - component: {fileID: 1847586895}
   m_Layer: 5
-  m_Name: SingPlayer
+  m_Name: Multiplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1731,7 +1731,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

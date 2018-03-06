@@ -12,6 +12,8 @@ public class CountdownTimer : MonoBehaviour {
 	public float countTimer = 90f;
 	public GameObject gameOver;
 
+	public GameObject CarContollerGUI;
+
 	[SerializeField]
 	private TextMeshProUGUI CountDown;
 
@@ -32,8 +34,9 @@ public class CountdownTimer : MonoBehaviour {
 
 		if (countTimer <= 0f){
 
+			CarContollerGUI.SetActive(false);
 			gameOver.SetActive(true);
-			Time.timeScale = 0f;
+			Time.timeScale = 0.1f;
 		}
 	}
 

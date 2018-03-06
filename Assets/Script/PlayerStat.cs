@@ -14,21 +14,21 @@ public class PlayerStat : MonoBehaviour {
 	private float starRating;
 	private float passangerScore;
 
+	public GameObject Congratulation;
+	public GameObject CarControllerGUI;
+
 	public void Awake()
 	{
 		starRating = 0;
-	}
-
-	public void Start()
-	{
-		
 	}
 
 	public void Update()
 	{
 		if (passangerScore >= 3f)
 		{
-			Time.timeScale = 0f;
+			CarControllerGUI.SetActive(false);
+			Congratulation.SetActive(true);
+			Time.timeScale = 0.1f;
 		}
 	}
 
