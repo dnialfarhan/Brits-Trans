@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53c3193c2b183e4eb4d00f63165e1d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 43d7673e6c25f1c4abac8a41cb1c6632, type: 3}
@@ -140,9 +141,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ed93e7b2b5f5c3a449324fdb87bb7ce5, type: 3}
     volume: 0.25
     volumeVariance: 0
-    pitch: 1.6
+    pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
 --- !u!114 &114635081101436202

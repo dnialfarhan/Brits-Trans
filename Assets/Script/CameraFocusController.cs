@@ -6,8 +6,6 @@
 using Vuforia;
 using UnityEngine;
 
-public class CaneraFocusController : MonoBehaviour
-{
 
 	public class CameraFocusController : MonoBehaviour
 	{
@@ -56,4 +54,4 @@ public class CaneraFocusController : MonoBehaviour
 			}
 		}
 	}
-}
+

@@ -17,4 +17,9 @@ public class ModeManager : MonoBehaviour {
 	{
 		SceneManager.LoadScene("NetworkMenu");
 	}
+
+	public void Back()
+	{
+		SceneManager.LoadScene("MainMenu");
+	}
 }

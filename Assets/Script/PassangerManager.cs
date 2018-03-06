@@ -1,3 +1,8 @@
+/*
+* Copyright (c) Danial Farhan
+* http://twitter.com/dfkh_/
+*/
+
 using UnityEngine;
 
 public class PassangerManager : MonoBehaviour {

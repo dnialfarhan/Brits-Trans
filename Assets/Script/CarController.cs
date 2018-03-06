@@ -58,9 +58,9 @@ public class CarController : MonoBehaviour
 	{
 
 		
-		float motor = maxMotorTorque * CrossPlatformInputManager.GetAxis("Vertical");
-		float steering = maxSteeringAngle * CrossPlatformInputManager.GetAxis("Horizontal");
-		float brakeTorque = Mathf.Abs(CrossPlatformInputManager.GetAxis("Jump"));
+		float motor = maxMotorTorque * Input.GetAxis("Vertical");
+		float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+		float brakeTorque = Mathf.Abs(Input.GetAxis("Jump"));
 		
 
 
@@ -77,7 +77,7 @@ public class CarController : MonoBehaviour
 			rb.drag = 0.1f;
 		}
 
-		SpeedoMeter.ShowSpeedo(rb.velocity.magnitude, 0, 100);
+		//SpeedoMeter.ShowSpeedo(rb.velocity.magnitude, 0, 100);
 
 		foreach (CarController_Manager truck_Info in truck_Infos)
 		{
@@ -101,31 +101,6 @@ public class CarController : MonoBehaviour
 
 		}
 
-		/*
-
-		float translation = Input.GetAxis("Vertical") * moveSpeed;
-		float rotation = Input.GetAxis("Horizontal") * rotSpeed;
-		float brake = Mathf.Abs(Input.GetAxis("Jump"));
-		translation *= Time.deltaTime;
-		//rotation *= Time.deltaTime;
-
-		rb.AddForce(this.transform.forward * translation*400);
-		rb.AddTorque(this.transform.up * rotation* 50);
-
-		if (brake > 0.001)
-		{
-			brake = moveSpeed;
-			translation = 0;
-			rb.drag = 10f;
-		}
-		else
-		{
-			brake = 0;
-			rb.drag = 2.5f;
-		}
-
-		SpeedoMeter.ShowSpeedo(rb.velocity.magnitude, 0, 200);
-		*/
 	}
 
 	public void OnTriggerEnter(Collider other)
@@ -137,7 +112,7 @@ public class CarController : MonoBehaviour
 				rb.AddForce(rb.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
 
 
-				FindObjectOfType<AudioManager>().Play("Boost");
+				//FindObjectOfType<AudioManager>().Play("Boost");
 
 				lastBoost = Time.time;
 			}
@@ -154,19 +129,19 @@ public class CarController : MonoBehaviour
 			}
 		}
 
-		/*if (other.gameObject.tag == "SlowCollider")
+		if (other.gameObject.tag == "SlowCollider")
 		{
 			maxMotorTorque = 25f;
-		}*/
+		}
 	}
 
-	/*public void OnTriggerExit(Collider other)
+	public void OnTriggerExit(Collider other)
 	{
 		if (other.gameObject.tag == "SlowCollider")
 		{
 			maxMotorTorque = 50f;
 		}
-	}*/
+	}
 
 
 	IEnumerator Continue()

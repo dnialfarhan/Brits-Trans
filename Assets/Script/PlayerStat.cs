@@ -3,10 +3,7 @@
 * http://twitter.com/dfkh_/
 */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class PlayerStat : MonoBehaviour {
@@ -22,15 +19,31 @@ public class PlayerStat : MonoBehaviour {
 		starRating = 0;
 	}
 
+	public void Start()
+	{
+		
+	}
+
+	public void Update()
+	{
+		if (passangerScore >= 3f)
+		{
+			Time.timeScale = 0f;
+		}
+	}
+
 	public void StarRating()
 	{
 		starRating = starRating + 1;
 		scoreText.text = starRating + "/5";
 	}
 
+
 	public void PassangerScore()
 	{
 		passangerScore = passangerScore + 1;
 		passangerText.text = passangerScore + "/3";
 	}
+
+	
 }
