@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour {
 
-	public float countTimer = 90f;
+	public float countTimer = 300f;
 	public GameObject gameOver;
 
 	public GameObject CarContollerGUI;
